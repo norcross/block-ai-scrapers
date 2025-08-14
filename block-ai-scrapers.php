@@ -45,7 +45,7 @@ function include_ai_blocking_rules( $robots, $public ) {
 	$block_data = fetch_ai_blocking_data();
 
 	// Return the existing data with whatever we have.
-	return $robots . "\n" . $block_data;
+	return $block_data . "\n" . $robots;
 }
 
 /**
